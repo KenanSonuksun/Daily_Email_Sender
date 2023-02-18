@@ -16,10 +16,10 @@ public class ScheduledTask {
     @Scheduled(cron = "0 0 8 * * *")
     public String dailyEmailSender() {
         EmailModel emailModel = new EmailModel();
-        emailModel.setToEmail("xx357951xx@gmail.com");
+        emailModel.setToEmail("**************@gmail.com");
         emailModel.setBody("Have a nice day!!");
         emailModel.setSubject("Good Morning");
-        emailModel.setAttachment("C:\\Users\\Kenan\\Desktop\\Ben\\ben.jpg");
+        emailModel.setAttachment("file path");
         return emailSenderController.sendMail(emailModel);
     }
 }
